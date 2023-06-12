@@ -7,20 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             let deviceWidth = window.innerWidth;
             let deviceHeight = window.innerHeight;
-            document.getElementsByClassName('parent-container')[0].style.setProperty('--container-width', deviceWidth.toString() +'px');
-            document.getElementsByClassName('parent-container')[0].style.setProperty('--container-height', deviceHeight.toString() + 'px');
+            document.getElementsByClassName('parent-container')[0].style.setProperty('--container-width', (deviceWidth - 15).toString() + 'px');
+            document.getElementsByClassName('parent-container')[0].style.setProperty('--container-height', (deviceHeight - 18).toString() + 'px');
         });
-
     </script>
     <title>Height-Width</title>
 </head>
 
 <body>
     <div class="parent-container">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio corporis amet dolorum aspernatur at voluptatum officia nulla, animi fugit, aut totam aperiam consequatur, fugiat perferendis voluptates ipsum asperiores molestiae numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, saepe laboriosam delectus repellat iusto nesciunt quis accusantium officia aut! Voluptatum, quos fugit maiores quia corporis quas ea magnam maxime laboriosam.</p>
+        <div class="grid-management">
+            <div class="nav-bar">
+                testing
+            </div>
+            <div class="work-experience-and-contacts">
+                testing
+            </div>
+            <div class="footer">
+                testing
+            </div>
+        </div>
+
     </div>
 
 </body>
