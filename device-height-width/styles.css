@@ -1,0 +1,12 @@
+.parent-container{
+    display: flex;
+    background-color: aquamarine;
+    width: var(--container-width);
+    height: var(--container-height);
+    flex-shrink: 0;
+}
+p{
+    width: 40%;
+}
+
+
