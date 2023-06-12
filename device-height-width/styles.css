@@ -1,28 +1,29 @@
 .parent-container {
-    display: flex;
-    background-color: aquamarine;
-    width: var(--container-width);
-    height: var(--container-height);
-    /* helps us not to shrink the content */
-    flex-shrink: 0;
+  display: flex;
+  background-color: aquamarine;
+  width: var(--container-width);
+  height: var(--container-height);
+  /* helps us not to shrink the content */
+  flex-shrink: 0;
 }
 
 .grid-management {
-    display: grid;
-    grid-template-rows: 10% 80% 10%;
-    width: 100%;
-    overflow-y: hidden;
-    overflow-x: hidden;
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .nav-bar {
-    background-color: bisque;
+  background-color: bisque;
 }
 
 .work-experience-and-contacts {
-    background-color: blueviolet;
+  background-color: blueviolet;
 }
 
 .footer {
-    background-color: cadetblue;
+  background-color: cadetblue;
 }

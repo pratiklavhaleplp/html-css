@@ -1,0 +1,5 @@
+.nav-bar {
+  flex-shrink: 0;
+  background-color: bisque;
+  border: 1px solid black;
+}
