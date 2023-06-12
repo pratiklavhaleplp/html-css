@@ -1,0 +1,101 @@
+h1,
+h2,
+h3,
+p,
+li {
+  font-family: sans-serif;
+}
+h1 {
+  color: blue;
+  font-size: 25px;
+  /* text-transform: lowercase; */
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 20px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+  color: brown;
+}
+
+.main-header {
+  background-color: rgb(203, 163, 110);
+  height: max-content;
+}
+.work-history-sections {
+  border-top: 3px solid grey;
+  margin: 1px;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+.article-style {
+  position: relative;
+  width: 1100px;
+  float: left;
+  border-right: 2px solid grey;
+}
+
+nav > p {
+  display: inline-block;
+}
+
+.remove-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+
+.postition-button {
+  position: absolute;
+  height: 50px;
+  width: 150px;
+  bottom: 0;
+  right: 0;
+}
+
+.work-hostory {
+  position: relative;
+  width: fit-content;
+}
+.work-hostory::after {
+  content: "Test";
+  background-color: cadetblue;
+  position: absolute;
+  top: -10px;
+  right: -70px;
+  color: black;
+}
+
+.one-row {
+  position: relative;
+  width: 1100px;
+}
+.contacts-section {
+  width: 250px;
+  margin-left: 10px;
+  padding: 0px;
+  float: left;
+}

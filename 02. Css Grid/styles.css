@@ -1,0 +1,91 @@
+.container--1 {
+  font-family: sans-serif;
+  background-color: rgb(164, 155, 155);
+  font-size: 40px;
+  margin: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 30px;
+  padding: 5px;
+  height: 500px;
+  overflow-y: auto;
+  display: none;
+}
+
+.el--1 {
+  background-color: #ff0000;
+}
+
+.el--2 {
+  background-color: #00ff00;
+}
+
+.el--3 {
+  background-color: #0000ff;
+}
+
+.el--4 {
+  background-color: #ffff00;
+}
+
+.el--5 {
+  background-color: #ff00ff;
+}
+
+.el--6 {
+  background-color: #00ffff;
+}
+
+.el--7 {
+  background-color: #ffa500;
+}
+
+.el--8 {
+  background-color: #800080;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.container--2 {
+  font-family: sans-serif;
+  background-color: rgb(164, 155, 155);
+  font-size: 40px;
+  margin: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: 250px 100px;
+  row-gap: 30px;
+  column-gap: 30px;
+  padding: 5px;
+  height: 500px;
+  justify-content: center;
+  align-content: center;
+  overflow-y: auto;
+}
+
+.el-c2--1 {
+  background-color: #ff0000;
+}
+
+.el-c2--2 {
+  background-color: #00ff00;
+  height: 125px;
+}
+
+.el-c2--3 {
+  background-color: #0000ff;
+}
+
+.el-c2--4 {
+  background-color: #ffff00;
+}
+
+.el-c2--5 {
+  background-color: #ff00ff;
+}
+
+.el-c2--6 {
+  background-color: #00ffff;
+}
