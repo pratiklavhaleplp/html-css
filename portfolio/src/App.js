@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import SuperParent from './components/SuperParent/SuperParent';
 
 function App() {
-  console.log('height', window);
-  const [width] = useState(window.screen.availWidth);
-  const [height] = useState(window.screen.availHeight);
-  return (
-    <SuperParent width={width} height={height} />
-  );
+    return (
+        <div><SuperParent width={window.screen.availWidth}
+            height={window.screen.availWidth}
+        /></div>
+
+    );
 }
 
 export default App;

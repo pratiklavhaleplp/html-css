@@ -2,4 +2,14 @@
   flex-shrink: 0;
   background-color: bisque;
   border: 1px solid black;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.logo{
+  
+}
+.flex-item{
+  width: 10%;
 }

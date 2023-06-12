@@ -1,12 +1,12 @@
 .parent-flex-container {
-  display: flex;
-  background-color: aqua;
-  min-height: 100vh;
+    display: flex;
+    background-color: aqua;
 }
+
 .parent-grid-container {
-  border: 1px solid black;
-  display: grid;
-  width: 100%;
-  flex-shrink: 0;
-  grid-template-rows: 10% auto 5%;
+    border: 1px solid black;
+    display: grid;
+    width: 100%;
+    flex-shrink: 0;
+    grid-template-rows: 4% auto 5%;
 }
