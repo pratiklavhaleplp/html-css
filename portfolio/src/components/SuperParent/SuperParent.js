@@ -1,21 +1,20 @@
-import React, { memo } from 'react';
-import './styles.css'
-import NavBar from '../NavBar/NavBar';
-import WorkExp from '../WorkExp/WorlExp';
-import Footer from '../Footer/Footer';
+import React, { useState, memo, useRef } from 'react';
+import './styles.css';
+import Article from '../Article/Article';
+import Header from '../Header/Header';
 
 const SuperParent = memo(({ width, height }) => {
   const styles = {
     width: width.toString() + 'px',
-    height: height.toString() + 'px'
+    height: height.toString() + 'px',
+    minheight: height.toString() + 'px'
   }
   return (
     <div style={styles}
       className='parent-flex-container'>
       <div className='parent-grid-container' >
-        <NavBar />
-        <WorkExp />
-        <Footer />
+        <Header />
+        <Article />
       </div>
     </div>
   );

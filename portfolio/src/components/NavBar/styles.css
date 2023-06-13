@@ -1,15 +1,28 @@
 .nav-bar {
   flex-shrink: 0;
-  background-color: bisque;
-  border: 1px solid black;
   display: flex;
   justify-content: right;
-  align-items: center;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
 }
 
-.logo{
-  
-}
 .flex-item{
-  width: 10%;
+  margin-top: 1%;
+  width: 9%;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: whitesmoke;
+  font-family: sans-serif;
 }
+
+/* #ffffff  for inside card*/
+/* #dadaf2 for number parent*/
+/* #020202 for headings in card */
+/* #262626 for sub heading */
+
+/* for 1st level font-size: 3em; line-height: 1.3; */
+/* 2nd levelHeading CSS for large card font-size: 2.5em; line-height: 1.3; */
+/* for 1 , 2, 3 in professional summary font-size: 1.5em; line-height: 1.3; */
+/* for 3rd level font-size: 1.25em; ; line-height: 1.3;*/
+/* for 4th level font-size: 1em; line-height: 1.8; */
