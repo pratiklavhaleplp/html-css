@@ -4,7 +4,9 @@ import './styles.css';
 import { BiCaretRightSquare } from "react-icons/bi";
 
 
-const CardContainer = ({ type = '', jsx = [], heading = '', colSize = coloumSize.threeColumns, showIcon = false }) => {
+const CardContainer = ({ type = '', jsx = [], heading = '', colSize = coloumSize.threeColumns, showIcon = false, image = '' }) => {
+    if (image)
+        console.log('image details is : ', image);
     switch (type) {
         case 'small': {
             return (
@@ -17,6 +19,7 @@ const CardContainer = ({ type = '', jsx = [], heading = '', colSize = coloumSize
         case 'medium': {
             return (
                 <div className='card-continer-medium'>
+                    {image ? <img className='image-width-height' src={image} alt="" /> : <></>}
                     <span><BiCaretRightSquare display={!showIcon ? 'none' : ''} size='30px' /><p className='sub-heading'>{heading}</p></span>
                     <>{jsx}</>
                 </div>
