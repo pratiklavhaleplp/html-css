@@ -19,7 +19,7 @@ const CardContainer = ({ type = '', jsx = [], heading = '', colSize = coloumSize
         case 'medium': {
             return (
                 <div className='card-continer-medium'>
-                    {image ? <img className='image-width-height' src={image} alt="" /> : <></>}
+                    <img className={image ? 'image-width-height' : 'display-none'} src={image} alt="" />
                     <span><BiCaretRightSquare display={!showIcon ? 'none' : ''} size='30px' /><p className='sub-heading'>{heading}</p></span>
                     <>{jsx}</>
                 </div>

@@ -1,60 +1,40 @@
-import { createSlice, legacy_createStore } from '@reduxjs/toolkit'
+import { createSlice, configureStore } from '@reduxjs/toolkit'
 
-const reducerFun = (state = {
-    homeRef: null,
-    careerRef: null,
-    skillsRef: null,
-    projectRef: null,
-    academicsRef: null,
-    contactRef: null
-}, action) => {
-    switch (action.type) {
-        case 'home': {
-            return {
-                ...state,
-                homeRef: action.payload
-
-            }
-        }
-        case 'career': {
-            return {
-                ...state,
-                careerRef: action.payload
-
-            }
-        }
-        case 'skills': {
-            return {
-                ...state,
-                skillsRef: action.payload
-
-            }
-        }
-        case 'project': {
-            return {
-                ...state,
-                projectRef: action.payload
-
-            }
-        }
-        case 'academics': {
-            return {
-                ...state,
-                academicsRef: action.payload
-
-            }
-        }
-        case 'contact': {
-            return {
-                ...state,
-                contactRef: action.payload
-
-            }
+const userSlice = createSlice({
+    name: 'testingRedux',
+    initialState: {
+        name: 'pratik',
+        address: 'Gadge Nagar',
+        age: 27
+    },
+    reducers: {
+        changeDefaultNameToUpperCase(state) {
+            //mutate states here in the reducer functions
+            state.name = state.name.toUpperCase();
+        },
+        changeAddress(state, action) {
+            state.address = action.payload;
+        },
+        changeAge(state) {
+            state.age = state.age + 1;
         }
     }
-}
+})
 
-const store = legacy_createStore(reducerFun);
+// for multiple reducers in practice there might be multiple slice you can create 
+// now we have only one userSlice may be in future there will be employeSlice,... and so on
+// const store = configureStore({
+//     reducer: { user: userSlice.reducer }
+// });
+
+// OR
+
+// for single reducer
+const store = configureStore({
+    reducer: userSlice.reducer
+});
+
+export const userActions = userSlice.actions;
 
 export default store;
 

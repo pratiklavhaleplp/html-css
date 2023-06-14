@@ -1,11 +1,11 @@
-.article-contianer{
-    margin: 0;
-    padding: 0;
-    background-color: #f6f4f5;
-    display: flex;
-    flex-direction: column;
+.article-contianer {
+  margin: 0;
+  padding: 0;
+  background-color: #f6f4f5;
+  display: flex;
+  flex-direction: column;
 }
 
-.center-align{
-    justify-content: center;
+.center-align {
+  justify-content: center;
 }

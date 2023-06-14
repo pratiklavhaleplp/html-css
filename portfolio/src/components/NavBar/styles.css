@@ -1,13 +1,17 @@
 .nav-bar {
-  flex-shrink: 0;
   display: flex;
   justify-content: right;
   align-items: flex-start;
-  margin: 0;
-  padding: 0;
+  align-items: end;
+  position: fixed;
+  width: 100%;
+  padding-top: 15px;
+  z-index: 1;
+  background-color: #4b92df;
+  padding-bottom: 20px;
 }
 
-.flex-item{
+.flex-item {
   margin-top: 1%;
   width: 9%;
   font-size: 1.2em;
@@ -15,6 +19,13 @@
   color: whitesmoke;
   font-family: sans-serif;
 }
+
+.flex-item:hover {
+  cursor: pointer;
+}
+/* .nav-bar-top-fix {
+  position: relative;
+} */
 
 /* #ffffff  for inside card*/
 /* #dadaf2 for number parent*/

@@ -8,8 +8,7 @@ const technicalSkills = <>
         <li>Angular</li>
         <li>NodeJs</li>
         <li>ExpressJS</li>
-        <li>SQL</li>
-        <li>MongoDB</li>
+        <li>MongoDB, SQL</li>
     </ul>
 </>
 
