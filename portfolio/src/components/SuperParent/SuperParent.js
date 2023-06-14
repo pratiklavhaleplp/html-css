@@ -1,4 +1,4 @@
-import React, { useState, memo, useRef } from 'react';
+import React, { memo } from 'react';
 import './styles.css';
 import Article from '../Article/Article';
 import Header from '../Header/Header';
