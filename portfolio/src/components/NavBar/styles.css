@@ -13,15 +13,51 @@
 
 .flex-item {
   margin-top: 1%;
-  width: 9%;
+  padding-left: 20px;
+  width: fit-content;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-right: 20px;
+  color: whitesmoke;
+  font-family: sans-serif;
+  display: flex;
+}
+
+.flex-item:hover {
+  cursor: pointer;
+}
+
+.project-parent {
+  top: 10%;
+  padding-left: 20px;
+  padding-right: 20px;
+  left: 70%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: #4b92df;
+  z-index: 10;
+}
+.project-parent:hover {
+}
+.project-height-set {
+  height: 40px;
+  position: fixed;
+  right: 19.2%;
+  top: 18px;
+  width: 40px;
+}
+.project-item {
+  width: 100%;
+  margin-bottom: 10px;
   font-size: 1.2em;
   font-weight: bold;
   color: whitesmoke;
   font-family: sans-serif;
 }
 
-.flex-item:hover {
-  cursor: pointer;
+.display-none {
+  display: none;
 }
 /* .nav-bar-top-fix {
   position: relative;

@@ -1,14 +1,16 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
+import { MdArrowDropDown } from 'react-icons/md';
 import './styles.css'
 import { userActions } from "../../store";
 
 const NavBar = () => {
-  const navBarItems = ['HOME', 'CAREER', 'SKILLS', 'PROJECTS', 'ACADEMICS', 'CONTACT'];
+  const navBarItems = [{ name: 'HOME', hasChild: false }, { name: 'CAREER', hasChild: false }, { name: 'SKILLS', hasChild: false }, { name: 'PROJECTS', hasChild: true }, { name: 'ACADEMICS', hasChild: false }, { name: 'CONTACT', hasChild: false }];
   const dispatch = useDispatch();
   const address = useSelector(state => state.address);
   const domRefs = useMemo(() => document.getElementsByClassName('parent-div'),
     []);
+  const [showFrontBackEnd, setShowFrontBackEnd] = useState(false);
   console.log(domRefs);
   const handelNavigation = (ele) => {
     let targetSection = [];
@@ -45,9 +47,14 @@ const NavBar = () => {
 
   return (
     <div className="nav-bar-top-fix">
+      <div className={showFrontBackEnd ? "project-parent" : "display-none"}>
+        <div className="project-item"> Front End Projects</div>
+        <div className="project-item"> Back End Projects</div>
+      </div>
       <div className="nav-bar">
         {
-          navBarItems.map((ele, index) => <div className='flex-item' key={index} onClick={() => handelNavigation(ele)}>{ele}</div>)
+          navBarItems.map((ele, index) => <div className="flex-item" key={index} onMouseLeave={() => setShowFrontBackEnd(false)} onMouseEnter={() => setShowFrontBackEnd(true)} onClick={() => handelNavigation(ele.name)}>
+            {ele.name}<MdArrowDropDown className={ele.hasChild ? 'project-height-set' : 'none'} display={ele.hasChild ? true : 'none'} /></div>)
         }
       </div>
     </div>
