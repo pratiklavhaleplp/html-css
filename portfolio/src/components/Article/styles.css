@@ -5,7 +5,6 @@
   display: flex;
   flex-direction: column;
 }
-
 .center-align {
   justify-content: center;
 }

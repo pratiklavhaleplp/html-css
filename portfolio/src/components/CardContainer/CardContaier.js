@@ -27,9 +27,11 @@ const CardContainer = ({ type = '', jsx = [], heading = '', colSize = coloumSize
         }
         default: {
             return (
-                <div className='card-continer-large'>
-                    <p className='heading'>{heading}</p>
-                    <div className={colSize === 3 ? 'three-columns' : 'two-columns'}>{jsx}</div>
+                <div className="parent-div">
+                    <div className='card-continer-large'>
+                        <p className='heading'>{heading}</p>
+                        <div className={colSize === 3 ? 'three-columns' : 'two-columns'}>{jsx}</div>
+                    </div>
                 </div>
             );
         }

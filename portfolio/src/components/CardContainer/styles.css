@@ -2,7 +2,6 @@
   background-color: #ffffff;
   width: 65%;
   max-height: 550px;
-  margin: 20px;
   border-radius: 10px;
   /* for align in x axis whole container */
   align-self: center;
@@ -10,6 +9,15 @@
   flex-direction: column;
   padding: 35px;
   column-gap: 10px;
+}
+
+.parent-div {
+  width: 110%;
+  max-height: fit-content;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
 }
 
 .card-continer-medium {

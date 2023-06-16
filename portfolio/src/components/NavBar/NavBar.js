@@ -7,9 +7,9 @@ const NavBar = () => {
   const navBarItems = ['HOME', 'CAREER', 'SKILLS', 'PROJECTS', 'ACADEMICS', 'CONTACT'];
   const dispatch = useDispatch();
   const address = useSelector(state => state.address);
-  const domRefs = useMemo(() => document.getElementsByClassName('heading'),
+  const domRefs = useMemo(() => document.getElementsByClassName('parent-div'),
     []);
-
+  console.log(domRefs);
   const handelNavigation = (ele) => {
     let targetSection = [];
     switch (ele) {
@@ -39,10 +39,6 @@ const NavBar = () => {
         domRefs[4].scrollIntoView({ behavior: "smooth" });
       }
         break;
-      default: {
-        targetSection = document.getElementsByClassName('header-parent')[0];
-        targetSection.scrollIntoView({ behavior: "smooth" });
-      }
     }
   }
 

@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: max-content;
+  position: relative;
+}
+
+.layout-container {
+  display: grid;
+  grid-template-rows: 70px 450px 450px 450px 450px;
+  justify-content: center;
+}
+.hero-section {
+  width: 100vw;
+}
+.nav-bar {
+  display: grid;
+  background-color: bisque;
+  height: 70px;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.three-cards {
+  border: 1px solid black;
+  margin: 2px;
+  width: 80vw;
+  justify-self: center;
+  display: grid;
+  grid-auto-columns: calc(100% - 70%);
+  grid-auto-flow: column;
+  overflow-x: auto;
+}
+.two-cards {
+  border: 1px solid black;
+  margin: 2px;
+  width: 80vw;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.one-card {
+  border: 1px solid black;
+  margin: 2px;
+  width: 80vw;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.four-cards {
+  border: 1px solid black;
+  margin: 2px;
+  width: 80vw;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.card {
+  margin: 2px;
+  border: 1px solid black;
+}
+.card-one {
+  margin: 10px;
+  border: 1px solid black;
+}
