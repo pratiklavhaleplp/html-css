@@ -38,13 +38,12 @@
   background-color: #4b92df;
   z-index: 10;
 }
-.project-parent:hover {
-}
+
 .project-height-set {
   height: 40px;
   position: fixed;
   right: 19.2%;
-  top: 18px;
+  top: 20px;
   width: 40px;
 }
 .project-item {
@@ -54,6 +53,9 @@
   font-weight: bold;
   color: whitesmoke;
   font-family: sans-serif;
+}
+.project-item:hover {
+  cursor: pointer;
 }
 
 .display-none {

@@ -46,15 +46,15 @@ const NavBar = () => {
 
 
   return (
-    <div className="nav-bar-top-fix">
-      <div className={showFrontBackEnd ? "project-parent" : "display-none"}>
+    <div onMouseLeave={() => setShowFrontBackEnd(false)} className="nav-bar-top-fix">
+      <div onMouseLeave={() => setShowFrontBackEnd(false)} className={showFrontBackEnd ? "project-parent" : "display-none"}>
         <div className="project-item"> Front End Projects</div>
         <div className="project-item"> Back End Projects</div>
       </div>
       <div className="nav-bar">
         {
-          navBarItems.map((ele, index) => <div className="flex-item" key={index} onMouseLeave={() => setShowFrontBackEnd(false)} onMouseEnter={() => setShowFrontBackEnd(true)} onClick={() => handelNavigation(ele.name)}>
-            {ele.name}<MdArrowDropDown className={ele.hasChild ? 'project-height-set' : 'none'} display={ele.hasChild ? true : 'none'} /></div>)
+          navBarItems.map((ele, index) => <div className="flex-item" key={index} onClick={() => handelNavigation(ele.name)}>
+            {ele.name}<MdArrowDropDown onClick={() => setShowFrontBackEnd(!showFrontBackEnd)} className={ele.hasChild ? 'project-height-set' : 'none'} display={ele.hasChild ? true : 'none'} /></div>)
         }
       </div>
     </div>
