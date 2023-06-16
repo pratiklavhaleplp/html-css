@@ -8,6 +8,7 @@ const NavBar = () => {
   const navBarItems = [{ name: 'HOME', hasChild: false }, { name: 'CAREER', hasChild: false }, { name: 'SKILLS', hasChild: false }, { name: 'PROJECTS', hasChild: true }, { name: 'ACADEMICS', hasChild: false }, { name: 'CONTACT', hasChild: false }];
   const dispatch = useDispatch();
   const address = useSelector(state => state.address);
+  console.log("Ignore this log this we used for redux implementation : ", address);
   const domRefs = useMemo(() => document.getElementsByClassName('parent-div'),
     []);
   const [showFrontBackEnd, setShowFrontBackEnd] = useState(false);
@@ -15,31 +16,33 @@ const NavBar = () => {
   const handelNavigation = (ele) => {
     let targetSection = [];
     switch (ele) {
-      case 'HOME': {
+      case 'HOME':
         targetSection = document.getElementsByClassName('header-parent')[0];
         targetSection.scrollIntoView({ behavior: "smooth" });
         dispatch(userActions.changeAddress("Address changed to hydrebad..."));
-      }
+
         break;
-      case 'CAREER': {
+      case 'CAREER':
         domRefs[0].scrollIntoView({ behavior: "smooth" });
-      }
+
         break;
-      case 'SKILLS': {
+      case 'SKILLS':
         domRefs[1].scrollIntoView({ behavior: "smooth" });
-      }
+
         break;
       case 'PROJECTS': {
+        setShowFrontBackEnd(!showFrontBackEnd);
         domRefs[2].scrollIntoView({ behavior: "smooth" });
       }
+
         break;
-      case 'ACADEMICS': {
+      case 'ACADEMICS':
         domRefs[3].scrollIntoView({ behavior: "smooth" });
-      }
+
         break;
-      case 'CONTACT': {
+      case 'CONTACT':
         domRefs[4].scrollIntoView({ behavior: "smooth" });
-      }
+
         break;
     }
   }
@@ -53,8 +56,13 @@ const NavBar = () => {
       </div>
       <div className="nav-bar">
         {
-          navBarItems.map((ele, index) => <div className="flex-item" key={index} onClick={() => handelNavigation(ele.name)}>
-            {ele.name}<MdArrowDropDown onClick={() => setShowFrontBackEnd(!showFrontBackEnd)} className={ele.hasChild ? 'project-height-set' : 'none'} display={ele.hasChild ? true : 'none'} /></div>)
+          navBarItems.map((ele, index) => {
+            if (!ele.hasChild)
+              return <div className="flex-item" key={index} onClick={() => handelNavigation(ele.name)}>
+                {ele.name}</div>
+            else
+              return <div className="flex-item" key={index} onClick={() => handelNavigation(ele.name)}>{ele.name}</div>
+          })
         }
       </div>
     </div>

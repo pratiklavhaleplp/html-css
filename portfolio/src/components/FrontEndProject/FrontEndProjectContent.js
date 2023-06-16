@@ -7,10 +7,10 @@ const portfolioText = <>
         my expertise in creating optimized and functional components.
     </p>
 </>
-const projectContent = <>
+const frontEntProjectContent = <>
     <CardContainer type='medium' image={imageTest} heading='React Portfolio' jsx={portfolioText} />
     <CardContainer type='medium' image={imageTest} heading='React Portfolio' jsx={portfolioText} />
     <CardContainer type='medium' image={imageTest} heading='React Portfolio' jsx={portfolioText} />
 </>
 
-export { projectContent };
+export { frontEntProjectContent };
