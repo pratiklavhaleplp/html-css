@@ -1,38 +1,69 @@
-.parent-backend-content {
-  margin-top: 50px;
+.backend-project-list {
+  margin-top: 7%;
   display: grid;
   grid-template-rows: auto;
   grid-auto-flow: row;
   overflow-y: auto;
-  max-height: 450px;
+  max-height: 84%;
   position: relative;
+  border-top: 1px solid;
 }
-.testing {
+.one-project-item {
   width: 100%;
   height: 100px;
   display: flex;
   flex-direction: row;
 }
 .backend-project-header {
-  width: 74vw;
-  height: 35px;
+  width: 72rem;
   display: flex;
   flex-direction: row;
   position: absolute;
   z-index: 10;
+  height: 4.5rem;
 }
-.first-flex-item {
+.project-name {
   width: 20%;
-  border: 1px solid black;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 2%;
+  align-items: center;
 }
-.second-flex-item {
+.stack {
   width: 20%;
-  border: 1px solid black;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 4%;
+  align-items: center;
 }
-.third-flex-item {
-  width: 60%;
-  border: 1px solid black;
+.description {
+  width: 30%;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 3.7%;
+  align-items: center;
 }
-.testing:nth-child(2n) {
-  background-color: aliceblue;
+.one-project-item:nth-child(2n) {
+  background-color: #c7d6e6;;
+}
+
+.parent-backend-content{
+  border: 1px solid grey;
+  margin-top: 1%;
+  height: 38.2%;
+}
+.project-name-row-item{
+  width: 25%;
+  margin-left: 2%;
+}
+.project-stack-row-item{
+  width: 25%;
+  margin-left: 2%;
+}
+.project-description-item{
+  width: 50%;
+  margin-left: 2%;
 }
