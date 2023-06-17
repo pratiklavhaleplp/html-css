@@ -1,4 +1,4 @@
-const heading = <>
+const heading = <div>
     <p className='header-heading'>
         Full Stack Developer.
     </p>
@@ -8,7 +8,7 @@ const heading = <>
         collaborative approach make me a <br />valuable team member, enabling me to deliver successful and
         cutting-edge solutions in fast-paced<br />  work environments.
     </p>
-</>
+</div>
 
 export {
     heading

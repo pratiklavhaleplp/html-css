@@ -1,40 +1,38 @@
-.parent-backend-content{
-    margin-top: 40px;
-    display: grid;
-    grid-template-rows: auto;
-    grid-auto-flow: row;
-    overflow-y: auto;
-    max-height: 500px;
-    position: relative;
+.parent-backend-content {
+  margin-top: 50px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  overflow-y: auto;
+  max-height: 450px;
+  position: relative;
 }
-.testing{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
+.testing {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
 }
-.backend-project-header{
-    width: 100%;
-    width: 1096;
-    height: 35px;
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    z-index: 10;
-    width: 1096px;
+.backend-project-header {
+  width: 74vw;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  z-index: 10;
 }
-.first-flex-item{
-    width: 20%;
-    border: 1px solid black;
+.first-flex-item {
+  width: 20%;
+  border: 1px solid black;
 }
-.second-flex-item{
-    width: 20%;
-    border: 1px solid black;
+.second-flex-item {
+  width: 20%;
+  border: 1px solid black;
 }
-.third-flex-item{
-    width: 60%;
-    border: 1px solid black;
+.third-flex-item {
+  width: 60%;
+  border: 1px solid black;
 }
-.testing:nth-child(2n){
-    background-color: aliceblue;
-  }
+.testing:nth-child(2n) {
+  background-color: aliceblue;
+}

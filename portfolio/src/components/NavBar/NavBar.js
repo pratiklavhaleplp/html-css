@@ -1,7 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
-import { MdArrowDropDown } from 'react-icons/md';
-import './styles.css'
+import './styles.css';
 import { userActions } from "../../store";
 
 const NavBar = () => {
@@ -30,11 +29,9 @@ const NavBar = () => {
         domRefs[1].scrollIntoView({ behavior: "smooth" });
 
         break;
-      case 'PROJECTS': {
+      case 'PROJECTS':
         setShowFrontBackEnd(!showFrontBackEnd);
         domRefs[2].scrollIntoView({ behavior: "smooth" });
-      }
-
         break;
       case 'ACADEMICS':
         domRefs[3].scrollIntoView({ behavior: "smooth" });
@@ -42,7 +39,6 @@ const NavBar = () => {
         break;
       case 'CONTACT':
         domRefs[4].scrollIntoView({ behavior: "smooth" });
-
         break;
     }
   }
