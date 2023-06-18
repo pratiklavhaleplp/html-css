@@ -21,29 +21,28 @@ const Header = () => {
     initializeApp(firebaseConfig);
     const storage = getStorage();
     const gsReference = ref(storage, 'gs://pdfdownload-44db1.appspot.com/pratik_lavhale_resume.pdf');
-    const testProm = new Promise((resolve, reject) => {
+    const downloadUrlPromise = new Promise((resolve, reject) => {
         try {
             resolve(getDownloadURL(gsReference));
         } catch (err) {
-            console.log(err);
+            reject(err);
         }
     });
     const downloadPDF = async () => {
         try {
-            testProm.then(res => setDownloadUrl(res));
+            downloadUrlPromise.then(res => setDownloadUrl(res));
             console.log('downloadable url is: ', downloadUrl);
-            // Use the URL to download the PDF
-            window.open(downloadUrl, '_blank');
         } catch (error) {
             console.log('Error downloading PDF:', error);
         }
     };
+    downloadPDF();
     return (<div className='header-parent'>
         <NavBar />
         <div className="dummy-height"></div>
         <>{heading}</>
         <div className="header-buttons">
-            <a className="resume-button" onClick={() => downloadPDF()}><span className="resume-text-style">Resume</span><span><AiOutlineDownload size='1x' className="icon-fix" /></span></a>
+            <a className="resume-button" href={downloadUrl} target="_blank"><span className="resume-text-style">Resume</span><span><AiOutlineDownload size='1x' className="icon-fix" /></span></a>
         </div>
     </div>)
 }
