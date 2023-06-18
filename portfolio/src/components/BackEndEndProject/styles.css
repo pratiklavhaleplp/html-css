@@ -72,6 +72,10 @@
   border-right: 2px solid #b2bbc3;
   font-size: 1.2em;
 }
+.heading-backend-project-name:hover {
+  border-bottom: 2px solid grey;
+  cursor: pointer;
+}
 .project-stack-row-item {
   width: 25%;
   padding: 1em;

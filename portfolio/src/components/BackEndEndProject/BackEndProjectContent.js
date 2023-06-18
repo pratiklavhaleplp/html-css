@@ -1,7 +1,9 @@
+import { AiOutlineGithub } from 'react-icons/ai';
+
 const projectName = (projectName = '', url = '') => {
     return (
         <>
-            <div className='project-name-row-item'><strong>{projectName}</strong></div>
+            <div className='project-name-row-item'><span onClick={() => window.open(url, '_blank')} className='heading-backend-project-name'><strong>{projectName}<AiOutlineGithub size='25px' className="githubLink" /></strong></span></div>
         </>
     )
 }
@@ -33,7 +35,7 @@ const backendProjectsList = [
         url: 'https://github.com/pratiklavhaleplp/node_projects/tree/main/Projects/basic-crud'
     },
     {
-        name: 'CSV-parser',
+        name: 'File parser With csv-parser',
         stack: 'NodeJS, ExpressJS',
         description: 'This project uses a CSV parser to parse a CSV file, pipes the results to a promised-based loading system, and starts the server on initial load of basic data.',
         url: 'https://github.com/pratiklavhaleplp/node_projects/tree/main/Projects/library-management'
@@ -45,10 +47,10 @@ const backendProjectsList = [
         url: 'https://github.com/pratiklavhaleplp/node_projects/tree/main/Notes'
     },
     {
-        name: 'Node Streams API',
+        name: "Node's Streams API",
         stack: 'NodeJS, ExpressJS',
         description: "This project is in development phase, soon i'll update the details on GIT",
-        url: 'https://github.com/pratiklavhaleplp/node_projects/tree/main/Projects/basic-crud'
+        url: 'https://github.com/pratiklavhaleplp/node_projects/tree/main/Projects/stream-apis'
     }
 ]
 const backEndEndProjectContent =

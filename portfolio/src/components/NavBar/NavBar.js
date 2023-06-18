@@ -29,16 +29,20 @@ const NavBar = () => {
         domRefs[1].scrollIntoView({ behavior: "smooth" });
 
         break;
-      case 'PROJECTS':
-        setShowFrontBackEnd(!showFrontBackEnd);
+      case 'frontEnd':
         domRefs[2].scrollIntoView({ behavior: "smooth" });
         break;
-      case 'ACADEMICS':
+      case 'backEnd':
         domRefs[3].scrollIntoView({ behavior: "smooth" });
+        break;
+      case 'PROJECTS': setShowFrontBackEnd(!showFrontBackEnd);
+        break;
+      case 'ACADEMICS':
+        domRefs[4].scrollIntoView({ behavior: "smooth" });
 
         break;
       case 'CONTACT':
-        domRefs[4].scrollIntoView({ behavior: "smooth" });
+        domRefs[5].scrollIntoView({ behavior: "smooth" });
         break;
     }
   }
@@ -47,8 +51,8 @@ const NavBar = () => {
   return (
     <div onMouseLeave={() => setShowFrontBackEnd(false)} className="nav-bar-top-fix">
       <div onMouseLeave={() => setShowFrontBackEnd(false)} className={showFrontBackEnd ? "project-parent" : "display-none"}>
-        <div className="project-item"> Front End Projects</div>
-        <div className="project-item"> Back End Projects</div>
+        <div className="project-item" onClick={() => handelNavigation('frontEnd')}> Front End Projects</div>
+        <div className="project-item" onClick={() => handelNavigation('backEnd')}> Back End Projects</div>
       </div>
       <div className="nav-bar">
         {

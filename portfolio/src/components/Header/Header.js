@@ -9,13 +9,13 @@ import { getStorage, ref, getDownloadURL } from "firebase/storage";
 const Header = () => {
     const [downloadUrl, setDownloadUrl] = useState('');
     const firebaseConfig = {
-        apiKey: process.env.apiKey,
-        authDomain: process.env.apiKey,
-        projectId: process.env.apiKey,
-        storageBucket: process.env.apiKey,
-        messagingSenderId: process.env.apiKey,
-        appId: process.env.apiKey,
-        measurementId: process.env.apiKey
+        REACT_APP_apiKey: process.env.apiKey,
+        REACT_APP_authDomain: process.env.apiKey,
+        REACT_APP_projectId: process.env.apiKey,
+        REACT_APP_storageBucket: process.env.apiKey,
+        REACT_APP_messagingSenderId: process.env.apiKey,
+        REACT_APP_appId: process.env.apiKey,
+        REACT_APP_measurementId: process.env.apiKey
     };
 
     console.log(firebaseConfig);
