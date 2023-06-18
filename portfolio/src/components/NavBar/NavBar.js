@@ -15,11 +15,11 @@ const NavBar = () => {
   const handelNavigation = (ele) => {
     let targetSection = [];
     switch (ele) {
+      default:
       case 'HOME':
         targetSection = document.getElementsByClassName('header-parent')[0];
         targetSection.scrollIntoView({ behavior: "smooth" });
         dispatch(userActions.changeAddress("Address changed to hydrebad..."));
-
         break;
       case 'CAREER':
         domRefs[0].scrollIntoView({ behavior: "smooth" });

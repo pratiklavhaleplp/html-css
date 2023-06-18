@@ -25,7 +25,7 @@ const backendProjectsList = [
     {
         name: 'SecureBackend With Google Oauth',
         stack: 'NodeJS, ExpressJS',
-        description: 'A robust backend project demonstrating Google OAuth, HTTPS communication, and promises for efficient code execution.With Helmet for enhanced security, it prevents vulnerabilities.HTTPS ensures encrypted data transmission, and promises handle asynchronous operations',
+        description: 'A robust backend project demonstrating Google OAuth, HTTPS communication, and promises for efficient code execution. With Helmet for enhanced security, it prevents vulnerabilities. HTTPS ensures encrypted data transmission, and promises handle asynchronous operations',
         url: 'https://github.com/pratiklavhaleplp/node_projects/tree/main/Projects/https-project'
     },
     {

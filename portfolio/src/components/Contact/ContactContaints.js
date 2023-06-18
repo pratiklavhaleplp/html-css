@@ -15,19 +15,19 @@ const email =
 const whatsApp =
   <>
     <p>
-      <a href="https://wa.me/+919405909873" target="_blank">https://wa.me/+919405909873</a>
+      <a href="https://wa.me/+919405909873" rel='noreferrer' target="_blank">https://wa.me/+919405909873</a>
     </p>
   </>
 const linkedIn =
   <>
     <p>
-      <a href="https://www.linkedin.com/in/pratik-lavhale-a3b25b194/" target="_blank">https://www.linkedin.com/in/pratik-lavhale-a3b25b194/</a>
+      <a href="https://www.linkedin.com/in/pratik-lavhale-a3b25b194/" rel='noreferrer' target="_blank">https://www.linkedin.com/in/pratik-lavhale-a3b25b194/</a>
     </p>
   </>
 const gitHub =
   <>
     <p>
-      <a href="https://github.com/pratiklavhaleplp" target="_blank">https://github.com/pratiklavhaleplp</a>
+      <a href="https://github.com/pratiklavhaleplp" rel='noreferrer' target="_blank">https://github.com/pratiklavhaleplp</a>
     </p>
   </>
 const contactDetails =

@@ -43,7 +43,7 @@ const Header = () => {
         <div className="dummy-height"></div>
         <>{heading}</>
         <div className="header-buttons">
-            <a className="resume-button" href={downloadUrl} target="_blank"><span className="resume-text-style">Resume</span><span><AiOutlineDownload size='30px' className="icon-fix" /></span></a>
+            <a className="resume-button" href={downloadUrl} rel='noreferrer' target="_blank"><span className="resume-text-style">Resume</span><span><AiOutlineDownload size='30px' className="icon-fix" /></span></a>
         </div>
     </div>)
 }
