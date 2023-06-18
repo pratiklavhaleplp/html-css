@@ -8,7 +8,6 @@ import { getStorage, ref, getDownloadURL } from "firebase/storage";
 
 const Header = () => {
     const [downloadUrl, setDownloadUrl] = useState('');
-    const [imageUrlT, setImageUrlT] = useState('');
     const firebaseConfig = {
         apiKey: "AIzaSyCcPVMt9tgcO2HOa7MzpxT2Xex5yPWaUpE",
         authDomain: "pdfdownload-44db1.firebaseapp.com",
@@ -32,7 +31,6 @@ const Header = () => {
     const downloadPDF = async () => {
         try {
             downloadUrlPromise.then(res => setDownloadUrl(res));
-            console.log('downloadable url is: ', downloadUrl);
         } catch (error) {
             console.log('Error downloading PDF:', error);
         }

@@ -18,7 +18,7 @@
   font-size: 1.2em;
   font-weight: bold;
   padding-right: 20px;
-  color: whitesmoke;
+  color: white;
   font-family: sans-serif;
   display: flex;
 }
@@ -30,7 +30,7 @@
   font-size: 1.2em;
   font-weight: bold;
   padding-right: 20px;
-  color: whitesmoke;
+  color: white;
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
@@ -69,11 +69,12 @@ span {
   margin-bottom: 10px;
   font-size: 1.2em;
   font-weight: bold;
-  color: whitesmoke;
+  color: white;
   font-family: sans-serif;
 }
 .project-item:hover {
   cursor: pointer;
+  color: #09243f;
 }
 
 .display-none {
