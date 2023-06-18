@@ -2,7 +2,23 @@ import React, { useMemo, useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import './styles.css';
 import { userActions } from "../../store";
+// import { getAnalytics } from "firebase/analytics";
 
+
+
+// Import the functions you need from the SDKs you need
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+// Initialize Firebase
+// const analytics = getAnalytics(app);
+
+
+
+// npm install - g firebase - tools
 const NavBar = () => {
   const navBarItems = [{ name: 'HOME', hasChild: false }, { name: 'CAREER', hasChild: false }, { name: 'SKILLS', hasChild: false }, { name: 'PROJECTS', hasChild: true }, { name: 'ACADEMICS', hasChild: false }, { name: 'CONTACT', hasChild: false }];
   const dispatch = useDispatch();

@@ -54,6 +54,9 @@
   width: 13%;
   box-sizing: 10px 10px;
 }
+.resume-button:hover {
+  cursor: pointer;
+}
 .resume-text-style {
   font-size: 1.1em;
   padding-left: 15px;
