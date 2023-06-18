@@ -6,3 +6,11 @@ p {
   margin: 0;
   height: max-content;
 }
+.githubLink {
+  margin-left: 0.4em;
+}
+
+.heading-front-end:hover {
+  border-bottom: 2px solid grey;
+  cursor: pointer;
+}

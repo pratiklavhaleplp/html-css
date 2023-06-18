@@ -9,14 +9,16 @@ import { getStorage, ref, getDownloadURL } from "firebase/storage";
 const Header = () => {
     const [downloadUrl, setDownloadUrl] = useState('');
     const firebaseConfig = {
-        apiKey: "AIzaSyCcPVMt9tgcO2HOa7MzpxT2Xex5yPWaUpE",
-        authDomain: "pdfdownload-44db1.firebaseapp.com",
-        projectId: "pdfdownload-44db1",
-        storageBucket: "pdfdownload-44db1.appspot.com",
-        messagingSenderId: "453838884138",
-        appId: "1:453838884138:web:8114193ef493fb0d846253",
-        measurementId: "G-82WG2054XW"
+        apiKey: process.env.apiKey,
+        authDomain: process.env.apiKey,
+        projectId: process.env.apiKey,
+        storageBucket: process.env.apiKey,
+        messagingSenderId: process.env.apiKey,
+        appId: process.env.apiKey,
+        measurementId: process.env.apiKey
     };
+
+    console.log(firebaseConfig);
 
     initializeApp(firebaseConfig);
     const storage = getStorage();
@@ -41,7 +43,7 @@ const Header = () => {
         <div className="dummy-height"></div>
         <>{heading}</>
         <div className="header-buttons">
-            <a className="resume-button" href={downloadUrl} target="_blank"><span className="resume-text-style">Resume</span><span><AiOutlineDownload size='1x' className="icon-fix" /></span></a>
+            <a className="resume-button" href={downloadUrl} target="_blank"><span className="resume-text-style">Resume</span><span><AiOutlineDownload size='30px' className="icon-fix" /></span></a>
         </div>
     </div>)
 }

@@ -1,24 +1,56 @@
-const projectName = (projectName = '') => {
+const projectName = (projectName = '', url = '') => {
     return (
         <>
-            <div className='project-name-row-item'>s simply dummy texto make a type specimen book. It has survived not only five centuries</div>
+            <div className='project-name-row-item'><strong>{projectName}</strong></div>
         </>
     )
 }
 const projectStack = (stack = '') => {
     return (
         <>
-            <div className='project-stack-row-item'>s  printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
+            <div className='project-stack-row-item'>{stack}</div>
         </>
     )
 }
-const projectDescription = (projectName = '') => {
+const projectDescription = (projectDescription = '') => {
     return (
         <>
-            <div className='project-description-item'>s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
+            <div className='project-description-item'>{projectDescription}</div>
         </>
     )
 }
+const backendProjectsList = [
+    {
+        name: 'SecureBackend With Google Oauth',
+        stack: 'NodeJS, ExpressJS',
+        description: 'A robust backend project demonstrating Google OAuth, HTTPS communication, and promises for efficient code execution.With Helmet for enhanced security, it prevents vulnerabilities.HTTPS ensures encrypted data transmission, and promises handle asynchronous operations',
+        url: 'https://github.com/pratiklavhaleplp/node_projects/tree/main/Projects/https-project'
+    },
+    {
+        name: 'Basic CRUD with MongoDB',
+        stack: 'NodeJS, ExpressJS, MongoDB',
+        description: 'A small project where i have implemened CRUD operations with promises, MongoDB, and paginated API. Clean code practices are followed throughout the project',
+        url: 'https://github.com/pratiklavhaleplp/node_projects/tree/main/Projects/basic-crud'
+    },
+    {
+        name: 'CSV-parser',
+        stack: 'NodeJS, ExpressJS',
+        description: 'This project uses a CSV parser to parse a CSV file, pipes the results to a promised-based loading system, and starts the server on initial load of basic data.',
+        url: 'https://github.com/pratiklavhaleplp/node_projects/tree/main/Projects/library-management'
+    },
+    {
+        name: 'Fundamentals and core concepts',
+        stack: 'NodeJS, ExpressJS, javascript',
+        description: 'This repository contains collection of my notes and code samples that cover all the basics of Node.js, from creating simple HTTP servers to using advanced features like worker threads, clustering and streams.',
+        url: 'https://github.com/pratiklavhaleplp/node_projects/tree/main/Notes'
+    },
+    {
+        name: 'Node Streams API',
+        stack: 'NodeJS, ExpressJS',
+        description: "This project is in development phase, soon i'll update the details on GIT",
+        url: 'https://github.com/pratiklavhaleplp/node_projects/tree/main/Projects/basic-crud'
+    }
+]
 const backEndEndProjectContent =
     <>
         <div className='parent-backend-content'>
@@ -28,18 +60,9 @@ const backEndEndProjectContent =
                 <div className='description'>Description</div>
             </div>
             <div className='backend-project-list'>
-                <div className='one-project-item'>{projectName()}{projectStack()}{projectDescription()}</div>
-                <div className='one-project-item'>{projectName()}{projectStack()}{projectDescription()}</div>
-                <div className='one-project-item'>{projectName()}{projectStack()}{projectDescription()}</div>
-                <div className='one-project-item'>{projectName()}{projectStack()}{projectDescription()}</div>
-                <div className='one-project-item'>{projectName()}{projectStack()}{projectDescription()}</div>
-                <div className='one-project-item'>{projectName()}{projectStack()}{projectDescription()}</div>
-                <div className='one-project-item'>{projectName()}{projectStack()}{projectDescription()}</div>
-                <div className='one-project-item'>{projectName()}{projectStack()}{projectDescription()}</div>
-                <div className='one-project-item'>{projectName()}{projectStack()}{projectDescription()}</div>
-                <div className='one-project-item'>{projectName()}{projectStack()}{projectDescription()}</div>
-                <div className='one-project-item'>{projectName()}{projectStack()}{projectDescription()}</div>
-                <div className='one-project-item'>{projectName()}{projectStack()}{projectDescription()}</div>
+                {
+                    backendProjectsList.map((ele, index) => <div key={index} className='one-project-item'>{projectName(ele.name, ele.url)}{projectStack(ele.stack)}{projectDescription(ele.description)}</div>)
+                }
             </div>
         </div>
     </>
