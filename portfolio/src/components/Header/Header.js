@@ -8,6 +8,7 @@ import { getStorage, ref, getDownloadURL } from "firebase/storage";
 
 const Header = () => {
     const [downloadUrl, setDownloadUrl] = useState('');
+    const [imageUrlT, setImageUrlT] = useState('');
     const firebaseConfig = {
         apiKey: "AIzaSyCcPVMt9tgcO2HOa7MzpxT2Xex5yPWaUpE",
         authDomain: "pdfdownload-44db1.firebaseapp.com",

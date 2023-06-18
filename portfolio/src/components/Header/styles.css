@@ -47,15 +47,18 @@
   display: flex;
   padding: 12px;
   background-color: #3474bf;
+
+  /* background-color: #1d4879; */
   /* background-color: rgb(90, 90, 125); */
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
   padding: 10px;
   width: 13%;
   box-sizing: 10px 10px;
 }
 .resume-button:hover {
   cursor: pointer;
+  background-color: #204b76;
 }
 .resume-text-style {
   font-size: 1.1em;
