@@ -15,12 +15,12 @@
   flex-direction: row;
 }
 .backend-project-header {
-  width: 64.35em;
+  width: 71.5vw;
   display: flex;
   flex-direction: row;
   position: absolute;
   z-index: 10;
-  height: 4.8em;
+  height: 10vh;
 }
 .project-name {
   width: 12.5em;
