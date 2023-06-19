@@ -15,7 +15,7 @@
   flex-direction: row;
 }
 .backend-project-header {
-  width: 77em;
+  width: 64.35em;
   display: flex;
   flex-direction: row;
   position: absolute;
@@ -23,7 +23,7 @@
   height: 4.8em;
 }
 .project-name {
-  width: 12em;
+  width: 12.5em;
   font-size: 1.3em;
   display: flex;
   font-weight: bold;
@@ -35,7 +35,7 @@
   background-color: #5b7b9c;
 }
 .stack {
-  width: 12.2em;
+  width: 12.7em;
   font-size: 1.3em;
   color: white;
   font-weight: bold;
@@ -47,7 +47,7 @@
   background-color: #5b7b9c;
 }
 .description {
-  width: 24.9em;
+  width: 25em;
   font-size: 1.3em;
   color: white;
   font-weight: bold;
@@ -64,6 +64,7 @@
 .parent-backend-content {
   border: 2px solid #b2bbc3;
   margin-top: 3%;
+  width: 100%;
   height: 31.6em;
 }
 .project-name-row-item {
