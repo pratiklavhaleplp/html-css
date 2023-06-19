@@ -15,7 +15,7 @@
   flex-direction: row;
 }
 .backend-project-header {
-  width: 71.5vw;
+  width: 71.8vw;
   display: grid;
   grid-template-columns: 2fr 2fr 4fr;
   position: absolute;
