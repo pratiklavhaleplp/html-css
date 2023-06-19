@@ -23,7 +23,7 @@
   height: 10vh;
 }
 .project-name {
-  width: 12.5em;
+  width: 16.5vw;
   font-size: 1.3em;
   display: flex;
   font-weight: bold;
@@ -35,7 +35,7 @@
   background-color: #5b7b9c;
 }
 .stack {
-  width: 12.7em;
+  width: 16.6vw;
   font-size: 1.3em;
   color: white;
   font-weight: bold;
@@ -47,7 +47,7 @@
   background-color: #5b7b9c;
 }
 .description {
-  width: 25em;
+  width: 34vw;
   font-size: 1.3em;
   color: white;
   font-weight: bold;
