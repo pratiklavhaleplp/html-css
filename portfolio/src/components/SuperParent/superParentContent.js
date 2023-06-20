@@ -1,6 +1,6 @@
 const heading = <div>
     <p className='header-heading'>
-        Full Stack Developer.
+        Pratik Lavhale.
     </p>
     <p className='extra-details'>
         I am an experienced Full Stack Developer with 3.2 years of practical

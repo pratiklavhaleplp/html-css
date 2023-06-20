@@ -1,0 +1,16 @@
+body {
+  display: grid;
+  height: 100vh;
+  width: 70vw;
+  grid-template-rows: 1fr 1fr;
+  padding: 30px;
+}
+
+.code-sec {
+  border: 1px solid;
+  resize: vertical;
+  overflow: auto;
+}
+.output-sec {
+  border: 1px solid;
+}
