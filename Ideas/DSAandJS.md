@@ -1,0 +1,86 @@
+## Application on providing a easy way to learn DSA and javascript at once.
+
+### OverALL Data
+
+- Languages
+  - c
+  - javascript
+  - rust [check this with ketan]
+- Data Structures
+  - Array
+  - Linked List
+  - Queue
+  - Tree
+  - Graph
+  - Heap
+  - Hash Table
+- Algorithms
+  - Sorting Algorithms:
+    - Bubble Sort
+    - Selection Sort
+    - Insertion Sort
+    - Merge Sort
+    - Quick Sort
+    - Heap Sort
+    - Radix Sort
+    - Counting Sort
+  - Searching Algorithms:
+    - Linear Search
+    - Binary Search
+    - Hashing (Hash Table-based search)
+  - Graph Algorithms:
+    - Breadth-First Search (BFS)
+    - Depth-First Search (DFS)
+    - Dijkstra's Algorithm (Shortest path)
+    - Bellman-Ford Algorithm (Shortest path with negative weights)
+    - Prim's Algorithm (Minimum spanning tree)
+    - Kruskal's Algorithm (Minimum spanning tree)
+    - Topological Sorting
+    - Floyd-Warshall Algorithm (All-pairs shortest path)
+  - Tree Algorithms:
+    - Binary Tree Traversal (In-order, Pre-order, Post-order)
+    - Binary Search Tree Operations (Insertion, Deletion, Searching)
+    - AVL Tree Operations (Self-balancing binary search tree)
+    - Red-Black Tree Operations (Self-balancing binary search tree)
+  - Dynamic Programming:
+    - Fibonacci Sequence
+    - Knapsack Problem
+    - Longest Common Subsequence
+    - Matrix Chain Multiplication
+    - Shortest Path Problems (e.g., Dijkstra's Algorithm)
+  - String Algorithms:
+    - Pattern Matching (e.g., Brute Force, Knuth-Morris-Pratt, Boyer-Moore)
+    - Longest Common Substring
+    - Edit Distance
+  - Numerical Algorithms:
+    - Binary Exponentiation
+    - Euclidean Algorithm (GCD)
+    - Sieve of Eratosthenes (Prime numbers)
+    - Fast Fourier Transform (FFT)
+    - Primality Testing (e.g., Miller-Rabin)
+  - Backtracking:
+    - N-Queens Problem
+    - Sudoku Solver
+    - Subset Sum
+    - Graph Coloring
+  - Greedy Algorithms:
+    - Kruskal's Algorithm (Minimum spanning tree)
+    - Prim's Algorithm (Minimum spanning tree)
+    - Dijkstra's Algorithm (Shortest path)
+    - Huffman Coding
+  - Divide and Conquer:
+    - Merge Sort
+    - Quick Sort
+    - Strassen's Matrix Multiplication
+    - Closest Pair of Points
+
+### UI Related (Check with Ketan)
+
+- we'll keep only three sections on screen
+  - LEFT
+    - Code
+    - Output
+  - RIGHT
+    - Explanation
+- Two nav bars one on the header one on the left hand side
+  - Nav in heder will contain [{search: ['language selection', 'data-structure list', 'algorithm list'], feedback }]
