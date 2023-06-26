@@ -1,0 +1,132 @@
+body {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.whats-app-parent {
+  display: grid;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 25vw;
+  height: 80vh;
+  max-height: 80vh;
+  grid-template-rows: 15vh auto;
+}
+.header-nav {
+  background-color: #086157;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+.one-chat-row {
+  border-bottom: 2px solid #f0f0f0;
+  max-height: 10vh;
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+.chat-list-section {
+  background-color: #ffffff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: grid;
+  grid-auto-rows: 10vh;
+  grid-auto-flow: row;
+  overflow-y: auto;
+}
+.profile-image {
+  height: 80%;
+  width: 70%;
+  border-radius: 70px;
+  border: 3px solid grey;
+  justify-self: center;
+  align-self: center;
+}
+.chat-section {
+  display: grid;
+  grid-template-rows: 40% 60%;
+  max-height: 80%;
+  align-self: center;
+}
+.contact-name-header {
+  justify-self: start;
+  align-self: center;
+  font-size: 1.2rem;
+  padding-left: 10px;
+}
+.chat-details {
+  justify-self: start;
+  align-self: center;
+  font-size: 1rem;
+  padding-left: 10px;
+}
+.app-name-and-icons {
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  height: 100%;
+}
+.app-name {
+  color: white;
+  font-size: 1.5rem;
+  padding: 15px;
+}
+.app-icons {
+  color: white;
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.icon-align {
+  display: grid;
+  align-self: center;
+  justify-self: center;
+  margin-left: 25%;
+}
+.icon-align:hover {
+  cursor: pointer;
+}
+.navigation-item {
+  height: 100%;
+  color: white;
+  font-size: 1.1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.calls {
+  align-self: flex-end;
+  width: 100%;
+  /* border-bottom: 3px solid white; */
+}
+.chats {
+  padding-left: 10px;
+  align-self: flex-end;
+  width: 100%;
+  border-bottom: 3px solid white;
+}
+.contacts {
+  display: grid;
+  justify-self: center;
+  align-self: flex-end;
+  width: 100%;
+  /* border-bottom: 3px solid white; */
+}
+
+.calls-text {
+  width: fit-content;
+  margin-left: 15%;
+  padding-bottom: 2%;
+}
+.chats-text {
+  width: fit-content;
+  margin-left: 15%;
+  padding-bottom: 2%;
+}
+.contacts-text {
+  width: fit-content;
+  margin-left: 15%;
+  padding-bottom: 2%;
+}
