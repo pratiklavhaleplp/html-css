@@ -69,3 +69,15 @@ const backEndEndProjectContent =
         </div>
     </>
 export { backEndEndProjectContent };
+
+
+function validationMehtod() {
+    // do you r calidation 
+
+    setvalodateion(true);
+};
+testin().then(res => {
+
+}).catch(exd => {
+
+})
