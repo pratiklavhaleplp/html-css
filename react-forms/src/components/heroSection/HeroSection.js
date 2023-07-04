@@ -3,7 +3,7 @@ import heroSection from '../../media/Afirm-bg-image.avif'
 
 function HeroSection() {
   return (
-    <img src={heroSection} />
+    <img src={heroSection} alt='herosection' />
   );
 }
 
