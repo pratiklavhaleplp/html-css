@@ -52,7 +52,7 @@ function ReactForms({ showModel, setShowModel }) {
 
 
 
-  const { register, control, handleSubmit, formState, reset } = form;
+  const { register, handleSubmit, formState, reset } = form;
   const { errors } = formState;
   const onSubmit = (data) => {
     setShowSuccessMsg(true);
