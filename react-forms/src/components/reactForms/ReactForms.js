@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import ReactModal from 'react-modal';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
-import { DevTool } from '@hookform/devtools';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
@@ -53,12 +52,14 @@ function ReactForms({ showModel, setShowModel }) {
 
 
 
-  const { register, control, handleSubmit, formState } = form;
+  const { register, control, handleSubmit, formState, reset } = form;
   const { errors } = formState;
   const onSubmit = (data) => {
-    setShowModel(true);
+    setShowSuccessMsg(true);
     setTimeout(() => {
-      setShowModel(false);
+      setShowSuccessMsg(false);
+      reset();
+      handleCloseModal();
     }, 1500);
   }
 
@@ -192,7 +193,7 @@ function ReactForms({ showModel, setShowModel }) {
         <button type="submit" onClick={handleSubmit(onSubmit)} className="bg-slate-600 text-white">Submit</button>
 
       </form>
-      {showSuccessMsg ? <p className='text-center text-green-700 text-3xl'>Form Submitted sucessfully...... Please close the popup</p> : ''}
+      {showSuccessMsg ? <p className='text-center text-green-700 text-3xl'>Form Submitted sucessfully...... Closing the popup</p> : ''}
 
     </ReactModal>
   );
